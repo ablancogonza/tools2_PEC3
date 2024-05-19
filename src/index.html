@@ -1,27 +1,66 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <link rel="icon" href="favicon.ico" />
+  <title>Concurso de Cocina Boadilla</title>
+</head>
+
+<body class="index__fondo">
+  <div class="container">
+    <include src="./views/header.html"></include>
+
+    <main class="poster">
+      <div class="poster__titulo">
+        <h1>2º Concurso de Cocina</h1>
+        <h2>Boadilla del Monte</h2>
+      </div>
+      <div class="poster__imagenprincipal">
+        <picture>
+          <source srcset="/src/assets/images/comida.jpg?as=webp&width=1300" type="image/webp" />
+          <img class="imagen" src="/src/assets/images/comida.jpg?as=jpg&width=1300" alt="Platos llenos de comida" />
+        </picture>
+      </div>
+      <div class="poster__lugar">
+        <picture>
+          <source srcset="/src/assets/images/palacio.jpg?as=webp&width=640" type="image/webp" />
+          <img class="imagen" src="/src/assets/images/palacio.jpg?as=jpg&width=640" alt="Palacio Infante Don Luis" />
+        </picture>
+      </div>
+      <div class="poster__concursoprevio">
+        <picture>
+          <source srcset="/src/assets/images/masterchef.jpg?as=webp&width=640" type="image/webp" />
+          <img class="imagen" src="/src/assets/images/masterchef.jpg?as=jpg&width=640"
+            alt="Concurso previo Master Chef" />
+        </picture>
+      </div>
+      <div class="poster__cuando">
+        <h1>Boadilla del Monte (Madrid)</h1>
+        <h2>1 de julio de 2024. 10:00 h</h2>
+      </div>
+      <div class="poster__trabajando">
+        <picture>
+          <source srcset="/src/assets/images/concurso.avif?as=webp&width=640" type="image/webp" />
+          <img class="imagen" src="/src/assets/images/concurso.avif?as=jpg&width=640" alt="Cociner@s trabajando" />
+        </picture>
+      </div>
+      <div class="poster__presentacion">
+        <picture>
+          <source srcset="/src/assets/images/charla.avif?as=webp&width=640" type="image/webp" />
+          <img class="imagen" src="/src/assets/images/charla.avif?as=jpg&width=640"
+            alt="Cocinero presentando sus recetas" />
+        </picture>
+      </div>
+    </main>
+  </div>
+
+  <include src="./views/footer.html" locals='{ "inscribete": "footer__previo__visible" }'></include>
+
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>
