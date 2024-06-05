@@ -10,11 +10,17 @@ module.exports = {
     },
     screens: {
       'xs': '500px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
     },
     fontSize: {
       'cqw3': '3cqw',
       'cqw4': '4cqw',
       'cqw5': '5cqw',
+      '3xl': '30px'
     },
     extend: {
     },
