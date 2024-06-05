@@ -4,10 +4,23 @@ module.exports = {
   theme: {
     colors: {
       'verdoso': 'color(display-p3 .95 .95 .9)',
-      'azul': 'rgb(13,110,253)'
+      'azul': 'rgb(13,110,253)',
+      'botonMenu': 'rgba(0,0,0,0.25)',
+      'grisOscuro': 'rgba(0,0,0,0.7)'
     },
-    extend: {},
+    screens: {
+      'xs': '500px',
+    },
+    fontSize: {
+      'cqw3': '3cqw',
+      'cqw4': '4cqw',
+      'cqw5': '5cqw',
+    },
+    extend: {
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/container-queries'),
+  ],
 }
 

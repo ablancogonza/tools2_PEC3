@@ -10,57 +10,14 @@
   <title>Concurso de Cocina Boadilla</title>
 </head>
 
-<body>
-  <div class="p-3 bg-verdoso">
+<body class="bg-verdoso">
+  <div class="ps-3 pe-3 mx-auto md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px]">
     <include src="./views/header.html"></include>
 
-    <main class="mt-6">
-      <div class="text-center font-medium">
-        <h1 class="text-2xl">2º Concurso de Cocina</h1>
-        <h2 class="text-xl">Boadilla del Monte</h2>
-      </div>
-      <div class="my-3">
-        <picture>
-          <source srcset="/src/assets/images/comida.jpg?as=webp&width=1300" type="image/webp" />
-          <img class="w-full" src="/src/assets/images/comida.jpg?as=jpg&width=1300" alt="Platos llenos de comida" />
-        </picture>
-      </div>
-      <div class="my-3">
-        <picture>
-          <source srcset="/src/assets/images/palacio.jpg?as=webp&width=640" type="image/webp" />
-          <img class="w-full" src="/src/assets/images/palacio.jpg?as=jpg&width=640" alt="Palacio Infante Don Luis" />
-        </picture>
-      </div>
-      <div class="my-3">
-        <picture>
-          <source srcset="/src/assets/images/masterchef.jpg?as=webp&width=640" type="image/webp" />
-          <img class="w-full" src="/src/assets/images/masterchef.jpg?as=jpg&width=640"
-            alt="Concurso previo Master Chef" />
-        </picture>
-      </div>
-      <div class="text-center font-medium my-3">
-        <h1 class="text-2xl">Boadilla del Monte (Madrid)</h1>
-        <h2 class="text-xl">1 de julio de 2024. 10:00 h</h2>
-      </div>
-      <div class="my-3">
-        <picture>
-          <source srcset="/src/assets/images/concurso.avif?as=webp&width=640" type="image/webp" />
-          <img class="w-full" src="/src/assets/images/concurso.avif?as=jpg&width=640" alt="Cociner@s trabajando" />
-        </picture>
-      </div>
-      <div class="my-3">
-        <picture>
-          <source srcset="/src/assets/images/charla.avif?as=webp&width=640" type="image/webp" />
-          <img class="w-full" src="/src/assets/images/charla.avif?as=jpg&width=640"
-            alt="Cocinero presentando sus recetas" />
-        </picture>
-      </div>
-    </main>
+    <include src="./views/poster.html"></include>
   </div>
 
   <include src="./views/footer.html" locals='{ "inscribete": "footer__previo__visible" }'></include>
-
-  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 
 </html>
