@@ -12,9 +12,30 @@
 
 <body>
     <div class="container">
-        <include src="./views/header.html" locals='{ "participantes": "active", "articulo": "", "formulario": ""}'></include>
+        <include src="./views/header.html" locals='{ "participantes": "font-bold", "articulo": "", "formulario": ""}'>
+        </include>
 
-        <include src="./views/lista_chefs.html"></include>
+        <div class="w-full">
+            <div class="h1">
+                <h1>Participantes inscritos hasta ahora</h1>
+            </div>
+            <div class="flex flex-row flex-wrap gap-4 items-center">
+                <include src="./views/participante.html"
+                    locals='{ "imagen": "alvaro-salazar.jpg", "nombre": "Alvaro Salazar"}'></include>
+                <include src="./views/participante.html"
+                    locals='{ "imagen": "antonio-rodriguez.jpg", "nombre": "Antonio Rodriguez"}'></include>
+                <include src="./views/participante.html"
+                    locals='{ "imagen": "francisco-javier-feixas.jpg", "nombre": "Francisco Javier Feixas"}'></include>
+                <include src="./views/participante.html"
+                    locals='{ "imagen": "jose-david-fernandez.jpg", "nombre": "José David Fernández"}'></include>
+                <include src="./views/participante.html"
+                    locals='{ "imagen": "juan-manuel-salgado.jpg", "nombre": "Juan Manuel Salgado"}'></include>
+                <include src="./views/participante.html"
+                    locals='{ "imagen": "lucia-freitas.jpg", "nombre": "Lucía Freitas"}'></include>
+                <include src="./views/participante.html"
+                    locals='{ "imagen": "ruben-osorio.jpg", "nombre": "Ruben Osorio"}'></include>
+            </div>
+        </div>
 
         <include src="./views/footer.html" locals='{ "inscribete": "block" }'></include>
     </div>

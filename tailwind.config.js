@@ -23,9 +23,16 @@ module.exports = {
       'cqw3': '3cqw',
       'cqw4': '4cqw',
       'cqw5': '5cqw',
-      '3xl': '30px'
+      '3xl': '30px',
+      '4xl': '39px'
     },
     extend: {
+      width: {
+        'chef-w': '300px'
+      },
+      height: {
+        'chef-h': '300px'
+      }
     },
   },
   plugins: [
