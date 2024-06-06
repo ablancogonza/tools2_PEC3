@@ -6,17 +6,20 @@ module.exports = {
       'verdoso': 'color(display-p3 .95 .95 .9)',
       'azul': 'rgb(13,110,253)',
       'botonMenu': 'rgba(0,0,0,0.25)',
-      'grisOscuro': 'rgba(0,0,0,0.7)'
+      'grisOscuro': 'rgba(0,0,0,0.7)',
+      'deshabilitado': 'rgba(0,0,0,0.2)',
+      'blanco': '#ffffff',
     },
     screens: {
       'xs': '500px',
-      'sm': '640px',
+      'sm': '540px',
       'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
+      'lg': '992px',
+      'xl': '1200px',
+      '2xl': '1400px'
     },
     fontSize: {
+      '2xl': '1.2rem',
       'cqw3': '3cqw',
       'cqw4': '4cqw',
       'cqw5': '5cqw',
