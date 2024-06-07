@@ -15,11 +15,11 @@
         <include src="./views/header.html" locals='{ "participantes": "font-bold", "articulo": "", "formulario": ""}'>
         </include>
 
-        <div class="w-full">
-            <div class="h1">
-                <h1>Participantes inscritos hasta ahora</h1>
+        <div>
+            <div>
+                <h1 class="h1">Participantes inscritos hasta ahora</h1>
             </div>
-            <div class="flex flex-row flex-wrap gap-4 items-center">
+            <div class="flex flex-row flex-wrap justify-center gap-4 items-center">
                 <include src="./views/participante.html"
                     locals='{ "imagen": "alvaro-salazar.jpg", "nombre": "Alvaro Salazar"}'></include>
                 <include src="./views/participante.html"
